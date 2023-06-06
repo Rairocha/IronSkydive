@@ -22,6 +22,7 @@ h1 {
   font-size: 9em;
   text-align:center;
   text-transform: uppercase;
+  margin:0
 }
 h2 {
   font-size: 5em;
@@ -46,15 +47,23 @@ h5 {
   line-height: 1em;
 }
 
-.nav-bar{ background: rgb(25, 33, 41);}
+.nav-bar{ background: rgb(25, 33, 41);
+}
+
 .nav-bar a{color: white;
           text-decoration: none;
           font-size: 2em;}
+
+.nav-bar ul{display:flex;
+justify-content:space-around;
+margin:0;
+}
+
 header{background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 0 0;
-height:650px}
+height:650px;}
 
 aside{
   font-size:2.5em;
@@ -65,9 +74,19 @@ q{font-style: italic;}
 .dark-background{background: rgb(25, 33, 41);
 color:white;}
 
+#general-information{display:flex;
+justify-content:space-between;}
+
+#general-information article {display:flex;
+flex-direction:column;
+gap: 10px 20px;
+margin:90px;
+align-self:center}
+
 .text{font-size:2em;
       font-weight:100;
-      text-align: center}
+      text-align: center;
+      }
 
 .link-btn{background:rgb(67, 163, 230);
 color:white;
@@ -75,18 +94,30 @@ font-family: Roboto Condensed;
 font-size: 2em;
 letter-spacing:0.5px;
 text-align: center;
-text-decoration: none}  
+text-decoration: none;}  
+
+#structure div{display:flex;
+justify-content:space-around;
+flex-wrap:wrap}
 
 .service-box{font-size:1.7em;
             text-align:center}
 
 .service-box img{width:125px}
 
+#team div{display:flex;
+justify-content:space-around;}
+
 #team .section-text{font-size:1.9em;
               text-align:center;
-              }
+              display:flex;
+              margin-right:310px;
+              margin-left:310px;
+              align-self:center;
+            border-bottom: 1px solid white}
 #team .member-name{font-size:1.5em;
-            font-weight:700}
+            font-weight:700;
+            text-align:center}
 
 #team img{width:250px;
           height:180px}
@@ -109,18 +140,18 @@ table {
         width: 70%;
         margin: 0 auto;
       }
-      th, td {
+th, td {
         border: 1px solid #ddd;
         padding: 6px;
         text-align: center;
       }
-      th {
-        background-color: #50bfda;
+ th {
+        background-color: rgb(67, 163, 230);
         font-size: 18px;
-		color:#fff;
+		    color:white;
         font-weight: bold;
       }
-      td {
+td {
         font-size: 16px;
-        color:#50bfda;
+        color:rgb(67, 163, 230);
       }
